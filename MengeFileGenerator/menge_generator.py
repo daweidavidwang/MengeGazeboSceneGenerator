@@ -333,7 +333,7 @@ def menge_main(behavior_map, wall_map, xml_path, scene_name, output_path):
 
     print("Creating behavior file '%s/%sB.xml..." % (SCENARIO_NAME, SCENARIO_NAME), end='\r', flush=True)
     COLOR_DICTIONARY = create_color_dictionary(BEHAVIOR_IMAGE)
-    if not create_XML_scene_behavior(MAIN_XML, BEHAVIOR_XML):
+    if not create_XML_scene_behavior(MAIN_XML, BEHAVIOR_XML, SCENE_XML):
         return
     write_to_XML(BEHAVIOR_XML, '%s/%sB' % (OUTPUT_PATH, SCENARIO_NAME))
 
